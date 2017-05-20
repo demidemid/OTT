@@ -1,0 +1,13 @@
+.body {
+  font-family: $basic-font-family;
+  font-size: 12px;
+  font-weight: 400;
+  width: $mobile-content-width;
+  margin: 0 auto;
+  background-color: #fff;
+
+  @media #{$desktop-widths} {
+    width: $desktop-content-width;
+    background-color: #fff;
+  }
+}

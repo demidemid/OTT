@@ -1,0 +1,12 @@
+.burger-button {
+  position: relative;
+  width: 19px;
+  height: 17px;
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+
+  background-image: url("../img/icon-sprite.png");
+  background-position: -10px -10px;
+}

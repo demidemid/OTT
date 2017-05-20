@@ -1,0 +1,20 @@
+.main-header {
+  min-height: 41px;
+}
+
+.main-header__menu-button {
+  padding: 12px 0;
+  margin-left: 21px;
+}
+
+@media #{$desktop-widths} {
+  .main-header {
+    min-height: 73px;
+    background-color: #373737;
+  }
+
+  .main-header__menu-button {
+    display: none;
+  }
+
+}

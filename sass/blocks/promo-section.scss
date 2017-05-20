@@ -1,0 +1,147 @@
+.promo-section {
+  padding-top: 50px;
+  padding-bottom: 43px;
+}
+
+.promo-section__title {
+  @include title;
+  text-align: center;
+
+}
+
+.promo-section__offers-list {
+  margin-top: 55px;
+  padding-left: 50px;
+  padding-right: 35px;
+}
+
+.promo-section__offers-item {
+  position: relative;
+  font-size: 13px;
+  margin-bottom: 27px;
+  list-style-type: none;
+
+  &:last-child {
+  margin-bottom: 39px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 9px;
+
+    top: 2px;
+    left: -21px;
+    background-image: url("../img/icon-sprite.png");
+    background-position: -117px -10px;
+  }
+}
+
+.promo-section__toggle-container {
+  display: flex;
+}
+
+.promo-section__toggle-button {
+  width: 123px;
+  min-height: 32px;
+  background-color: transparent;
+  color: #212121;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+
+  &:first-child {
+    margin-left: auto;
+    border-right: 0px;
+    border-radius: 2px 0 0 2px;
+  }
+
+  &:last-child {
+    margin-right: auto;
+    border-left: 0;
+    border-radius: 0 2px 2px 0;
+  }
+
+  &--active {
+    width: 124px;
+    border: 1px solid $main-bg-color;
+    background-color: $main-bg-color;
+  }
+}
+
+.promo-section__features-block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.promo-section__feature {
+  position: relative;
+  width: 60px;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: #424242;
+  padding-top: 88px;
+
+  &--airline::before {
+    content: "";
+    position: absolute;
+    width: 46px;
+    height: 35px;
+
+    top: 37px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../img/airplane.png");
+  }
+
+  &--train::before {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 37px;
+
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../img/train.png");
+  }
+
+    &--house::before {
+      content: "";
+      position: absolute;
+      width: 41px;
+      height: 38px;
+
+      top: 35px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("../img/house.png");
+    }
+}
+
+.promo-section__button {
+  margin-top: 39px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.promo-section__info-quote {
+  position: relative;
+  margin-top: 36px;
+  margin-bottom: 0;
+  padding-left: 59px;
+  padding-right: 51px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+
+    top: 0;
+    left: 39px;
+    background-image: url("../img/icon-sprite.png");
+    background-position: -84px -10px;
+  }
+}

@@ -1,0 +1,111 @@
+.info-section {
+  background-color: $main-bg-color;
+  text-align: center;
+  padding-top: 73px;
+  padding-bottom: 55px;
+}
+
+.info-section__title {
+  @include title;
+
+}
+
+.info-section__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &--pos-automat {
+  padding-top: 109px;
+
+    &::before {
+      width: 40px;
+      height: 45px;
+
+      top: 35px;
+      background-image: url("../img/pos-automat.png");
+    }
+  }
+
+  &--money-hand {
+    padding-top: 104px;
+
+    &::before {
+      width: 46px;
+      height: 36px;
+
+      top: 50px;
+      background-image: url("../img/money-hand.png");
+    }
+  }
+
+  &--street-terminal {
+    padding-top: 112px;
+
+    &::before {
+      width: 32px;
+      height: 43px;
+
+      top: 55px;
+      background-image: url("../img/street-terminal.png");
+    }
+  }
+
+  &--plane-table {
+    padding-top: 118px;
+
+    &::before {
+      width: 32px;
+      height: 44px;
+
+      top: 58px;
+      background-image: url("../img/plane-table.png");
+    }
+  }
+
+  &--mobilephone {
+    padding-top: 125px;
+
+    &::before {
+      width: 49px;
+      height: 44px;
+
+      top: 60px;
+      background-image: url("../img/mobilephone.png");
+    }
+  }
+
+  &--credit-card {
+    padding-top: 112px;
+
+    &::before {
+      width: 51px;
+      height: 40px;
+
+      top: 58px;
+      background-image: url("../img/credit-card.png");
+    }
+  }
+}
+
+.info-section__item-title {
+  font-size: 16px;
+  margin: 0;
+}
+
+.info-section__item-description {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.info-section__button {
+  margin-top: 69px;
+  margin-left: auto;
+  margin-right: auto;
+}

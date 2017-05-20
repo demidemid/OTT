@@ -1,0 +1,12 @@
+@import "../node_modules/normalize.scss/normalize.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "blocks/body.scss";
+@import "blocks/burger-button.scss";
+@import "blocks/button.scss";
+@import "blocks/info-section.scss";
+@import "blocks/main-header.scss";
+@import "blocks/promo-section.scss";
