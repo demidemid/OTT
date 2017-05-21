@@ -11,8 +11,8 @@
 
 .promo-section__offers-list {
   margin-top: 55px;
-  padding-left: 50px;
-  padding-right: 35px;
+  padding-left: 18.4%;
+  padding-right: 10.9%;
 }
 
 .promo-section__offers-item {
@@ -31,7 +31,7 @@
     width: 13px;
     height: 9px;
 
-    top: 2px;
+    top: 4px;
     left: -21px;
     background-image: url("../img/icon-sprite.png");
     background-position: -117px -10px;
@@ -71,13 +71,14 @@
 
 .promo-section__features-block {
   display: flex;
-  justify-content: space-around;
+  width: 70%;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .promo-section__feature {
   position: relative;
-  width: 60px;
-  font-size: 22px;
+  font-size: 14px;
   line-height: 22px;
   text-align: center;
   color: #424242;
@@ -92,7 +93,7 @@
     top: 37px;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url("../img/airplane.png");
+    background-image: url("../img/mobile-airplane.png");
   }
 
   &--train::before {
@@ -104,20 +105,33 @@
     top: 35px;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url("../img/train.png");
+    background-image: url("../img/mobile-train.png");
   }
 
-    &--house::before {
-      content: "";
-      position: absolute;
-      width: 41px;
-      height: 38px;
+  &--house::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 41px;
+    height: 38px;
 
-      top: 35px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-image: url("../img/house.png");
-    }
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../img/mobile-house.png");
+  }
+}
+
+.promo-section__feature-anti-br {
+  display: inline-block;
+}
+
+.promo-section__feature-big-font {
+  font-size: 22px;
+}
+
+.promo-section__feature-hidden-on-mobile {
+  display: none;
 }
 
 .promo-section__button {
@@ -130,8 +144,8 @@
   position: relative;
   margin-top: 36px;
   margin-bottom: 0;
-  padding-left: 59px;
-  padding-right: 51px;
+  margin-left: 18.4%;
+  margin-right: 15.9%;
 
   &::before {
     content: "";
@@ -140,7 +154,7 @@
     height: 13px;
 
     top: 0;
-    left: 39px;
+    left: -25px;
     background-image: url("../img/icon-sprite.png");
     background-position: -84px -10px;
   }
@@ -148,7 +162,63 @@
 
 @media #{$desktop-widths} {
   .promo-section {
-    padding-top: 65px;
+    padding-top: 60px;
     padding-bottom: 70px;
+  }
+
+  .promo-section__offers-list {
+    margin-top: 67px;
+    padding-left: 380px;
+    padding-right: 380px;
+  }
+
+  .promo-section__offers-item {
+    font-size: 16px;
+    margin-bottom: 22px;
+
+    &:last-child {
+    margin-bottom: 49px;
+    }
+
+    &::before {
+      left: -25px;
+    }
+  }
+
+  .promo-section__features-block {
+    width: 56%;
+  }
+
+  .promo-section__feature {
+    font-size: 16px;
+    padding-top: 128px;
+
+    &--airline::before {
+      width: 80px;
+      height: 61px;
+
+      top: 25px;
+      background-image: url("../img/desktop-airplane.png");
+    }
+
+    &--train::before {
+      width: 54px;
+      height: 64px;
+      background-image: url("../img/desktop-train.png");
+    }
+
+    &--house::before {
+      width: 71px;
+      height: 66px;
+      background-image: url("../img/desktop-house.png");
+    }
+  }
+
+  .promo-section__feature-big-font {
+    font-size: 32px;
+  }
+
+  .promo-section__feature-hidden-on-mobile {
+    display: block;
   }
 }

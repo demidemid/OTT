@@ -513,6 +513,11 @@ th {
 .main-menu__user-block {
   display: none; }
 
+.main-menu__my-order {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase; }
+
 @media (min-width: 1280px) {
   .main-menu {
     display: block; }
@@ -520,7 +525,7 @@ th {
     margin-left: 40px; }
   .main-menu__item {
     display: inline-block;
-    margin-right: 25px; }
+    margin-right: 22px; }
     .main-menu__item--three-dots {
       position: relative;
       font-size: 0px; }
@@ -544,7 +549,7 @@ th {
     margin-left: auto;
     margin-right: 40px; }
   .main-menu__my-order {
-    margin-right: 10px; }
+    margin-right: 8px; }
   .main-menu__login {
     display: inline-block;
     color: #ffffff;
@@ -571,8 +576,8 @@ th {
 
 .promo-section__offers-list {
   margin-top: 55px;
-  padding-left: 50px;
-  padding-right: 35px; }
+  padding-left: 18.4%;
+  padding-right: 10.9%; }
 
 .promo-section__offers-item {
   position: relative;
@@ -586,7 +591,7 @@ th {
     position: absolute;
     width: 13px;
     height: 9px;
-    top: 2px;
+    top: 4px;
     left: -21px;
     background-image: url("../img/icon-sprite.png");
     background-position: -117px -10px; }
@@ -616,12 +621,13 @@ th {
 
 .promo-section__features-block {
   display: flex;
-  justify-content: space-around; }
+  width: 70%;
+  justify-content: space-between;
+  margin: 0 auto; }
 
 .promo-section__feature {
   position: relative;
-  width: 60px;
-  font-size: 22px;
+  font-size: 14px;
   line-height: 22px;
   text-align: center;
   color: #424242;
@@ -634,7 +640,7 @@ th {
     top: 37px;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url("../img/airplane.png"); }
+    background-image: url("../img/mobile-airplane.png"); }
   .promo-section__feature--train::before {
     content: "";
     position: absolute;
@@ -643,16 +649,26 @@ th {
     top: 35px;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url("../img/train.png"); }
+    background-image: url("../img/mobile-train.png"); }
   .promo-section__feature--house::before {
     content: "";
     position: absolute;
+    display: block;
     width: 41px;
     height: 38px;
     top: 35px;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url("../img/house.png"); }
+    background-image: url("../img/mobile-house.png"); }
+
+.promo-section__feature-anti-br {
+  display: inline-block; }
+
+.promo-section__feature-big-font {
+  font-size: 22px; }
+
+.promo-section__feature-hidden-on-mobile {
+  display: none; }
 
 .promo-section__button {
   margin-top: 39px;
@@ -663,19 +679,52 @@ th {
   position: relative;
   margin-top: 36px;
   margin-bottom: 0;
-  padding-left: 59px;
-  padding-right: 51px; }
+  margin-left: 18.4%;
+  margin-right: 15.9%; }
   .promo-section__info-quote::before {
     content: "";
     position: absolute;
     width: 13px;
     height: 13px;
     top: 0;
-    left: 39px;
+    left: -25px;
     background-image: url("../img/icon-sprite.png");
     background-position: -84px -10px; }
 
 @media (min-width: 1280px) {
   .promo-section {
-    padding-top: 65px;
-    padding-bottom: 70px; } }
+    padding-top: 60px;
+    padding-bottom: 70px; }
+  .promo-section__offers-list {
+    margin-top: 67px;
+    padding-left: 380px;
+    padding-right: 380px; }
+  .promo-section__offers-item {
+    font-size: 16px;
+    margin-bottom: 22px; }
+    .promo-section__offers-item:last-child {
+      margin-bottom: 49px; }
+    .promo-section__offers-item::before {
+      left: -25px; }
+  .promo-section__features-block {
+    width: 56%; }
+  .promo-section__feature {
+    font-size: 16px;
+    padding-top: 128px; }
+    .promo-section__feature--airline::before {
+      width: 80px;
+      height: 61px;
+      top: 25px;
+      background-image: url("../img/desktop-airplane.png"); }
+    .promo-section__feature--train::before {
+      width: 54px;
+      height: 64px;
+      background-image: url("../img/desktop-train.png"); }
+    .promo-section__feature--house::before {
+      width: 71px;
+      height: 66px;
+      background-image: url("../img/desktop-house.png"); }
+  .promo-section__feature-big-font {
+    font-size: 32px; }
+  .promo-section__feature-hidden-on-mobile {
+    display: block; } }
