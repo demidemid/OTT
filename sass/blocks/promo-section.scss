@@ -1,5 +1,5 @@
 .promo-section {
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 43px;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .promo-section__offers-list {
-  margin-top: 55px;
+  margin-top: 50px;
   padding-left: 18.4%;
   padding-right: 10.9%;
 }
@@ -18,7 +18,7 @@
 .promo-section__offers-item {
   position: relative;
   font-size: 13px;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
   list-style-type: none;
 
   &:last-child {
@@ -72,7 +72,7 @@
 
 .promo-section__features-block {
   display: flex;
-  width: 70%;
+  width: 80%;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -80,6 +80,7 @@
 .promo-section__feature {
   position: relative;
   font-size: 14px;
+  min-width: 60px;
   line-height: 22px;
   text-align: center;
   color: #424242;
@@ -136,7 +137,7 @@
 }
 
 .promo-section__button {
-  margin-top: 39px;
+  margin-top: 31px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -146,7 +147,7 @@
   margin-top: 36px;
   margin-bottom: 0;
   margin-left: 18.4%;
-  margin-right: 15.9%;
+  margin-right: 15.0%;
 
   &::before {
     content: "";
@@ -155,7 +156,7 @@
     height: 13px;
 
     top: 0;
-    left: -25px;
+    left: -21px;
     background-image: url("../img/icon-sprite.png");
     background-position: -84px -10px;
   }

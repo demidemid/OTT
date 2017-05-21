@@ -406,7 +406,7 @@ th {
 .info-section {
   background-color: #ffd41e;
   text-align: center;
-  padding-top: 73px;
+  padding-top: 69px;
   padding-bottom: 55px; }
 
 .info-section__title {
@@ -421,51 +421,54 @@ th {
   position: relative; }
   .info-section__item::before {
     content: "";
+    display: block;
     position: absolute;
     left: 50%;
     transform: translateX(-50%); }
   .info-section__item--pos-automat {
-    padding-top: 109px; }
+    padding-top: 99px; }
     .info-section__item--pos-automat::before {
       width: 40px;
       height: 45px;
-      top: 35px;
-      background-image: url("../img/pos-automat.png"); }
+      top: 44px;
+      left: 51%;
+      background-image: url("../img/mobile-pos-automat.png"); }
   .info-section__item--money-hand {
-    padding-top: 104px; }
+    padding-top: 95px; }
     .info-section__item--money-hand::before {
       width: 46px;
       height: 36px;
-      top: 50px;
-      background-image: url("../img/money-hand.png"); }
+      top: 48px;
+      background-image: url("../img/mobile-money-hand.png"); }
   .info-section__item--street-terminal {
-    padding-top: 112px; }
+    padding-top: 105px; }
     .info-section__item--street-terminal::before {
       width: 32px;
       height: 43px;
-      top: 55px;
-      background-image: url("../img/street-terminal.png"); }
+      top: 53px;
+      background-image: url("../img/mobile-street-terminal.png"); }
   .info-section__item--plane-table {
-    padding-top: 118px; }
+    padding-top: 110px; }
     .info-section__item--plane-table::before {
       width: 32px;
       height: 44px;
-      top: 58px;
-      background-image: url("../img/plane-table.png"); }
-  .info-section__item--mobilephone {
-    padding-top: 125px; }
-    .info-section__item--mobilephone::before {
+      top: 55px;
+      background-image: url("../img/mobile-plane-table.png"); }
+  .info-section__item--cellphone {
+    padding-top: 118px; }
+    .info-section__item--cellphone::before {
       width: 49px;
       height: 44px;
-      top: 60px;
-      background-image: url("../img/mobilephone.png"); }
+      top: 57px;
+      left: 52.7%;
+      background-image: url("../img/mobile-cellphone.png"); }
   .info-section__item--credit-card {
-    padding-top: 112px; }
+    padding-top: 103px; }
     .info-section__item--credit-card::before {
       width: 51px;
       height: 40px;
-      top: 58px;
-      background-image: url("../img/credit-card.png"); }
+      top: 55px;
+      background-image: url("../img/mobile-credit-card.png"); }
 
 .info-section__item-title {
   font-size: 16px;
@@ -476,9 +479,58 @@ th {
   margin-bottom: 0; }
 
 .info-section__button {
-  margin-top: 69px;
+  margin-top: 65px;
   margin-left: auto;
   margin-right: auto; }
+
+@media (min-width: 1280px) {
+  .info-section {
+    padding-top: 70px; }
+  .info-section__item-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 68.4%;
+    justify-content: space-between;
+    margin-left: 15.7%;
+    margin-right: 15.9%; }
+  .info-section__item {
+    width: 25.1%; }
+    .info-section__item--pos-automat {
+      padding-top: 182px; }
+      .info-section__item--pos-automat::before {
+        width: 74px;
+        height: 82px;
+        top: 25px;
+        background-image: url("../img/desktop-pos-automat.png"); }
+    .info-section__item--money-hand::before {
+      width: 84px;
+      height: 64px;
+      top: 30px;
+      background-image: url("../img/desktop-money-hand.png"); }
+    .info-section__item--street-terminal::before {
+      width: 60px;
+      height: 77px;
+      top: 35px;
+      background-image: url("../img/desktop-street-terminal.png"); }
+    .info-section__item--plane-table::before {
+      width: 60px;
+      height: 79px;
+      top: 38px;
+      background-image: url("../img/desktop-plane-table.png"); }
+    .info-section__item--cellphone {
+      padding-top: 125px; }
+      .info-section__item--cellphone::before {
+        width: 90px;
+        height: 80px;
+        top: 40px;
+        background-image: url("../img/desktop-cellphone.png"); }
+    .info-section__item--credit-card::before {
+      width: 94px;
+      height: 72px;
+      top: 38px;
+      background-image: url("../img/desktop-credit-card.png"); }
+  .info-section__item-title {
+    font-size: 22px; } }
 
 .main-header {
   min-height: 41px; }
@@ -569,7 +621,7 @@ th {
     text-align: center; } }
 
 .promo-section {
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 43px; }
 
 .promo-section__title {
@@ -582,14 +634,14 @@ th {
       font-size: 30px; } }
 
 .promo-section__offers-list {
-  margin-top: 55px;
+  margin-top: 50px;
   padding-left: 18.4%;
   padding-right: 10.9%; }
 
 .promo-section__offers-item {
   position: relative;
   font-size: 13px;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
   list-style-type: none; }
   .promo-section__offers-item:last-child {
     margin-bottom: 39px; }
@@ -629,13 +681,14 @@ th {
 
 .promo-section__features-block {
   display: flex;
-  width: 70%;
+  width: 80%;
   justify-content: space-between;
   margin: 0 auto; }
 
 .promo-section__feature {
   position: relative;
   font-size: 14px;
+  min-width: 60px;
   line-height: 22px;
   text-align: center;
   color: #424242;
@@ -679,7 +732,7 @@ th {
   display: none; }
 
 .promo-section__button {
-  margin-top: 39px;
+  margin-top: 31px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -688,14 +741,14 @@ th {
   margin-top: 36px;
   margin-bottom: 0;
   margin-left: 18.4%;
-  margin-right: 15.9%; }
+  margin-right: 15.0%; }
   .promo-section__info-quote::before {
     content: "";
     position: absolute;
     width: 13px;
     height: 13px;
     top: 0;
-    left: -25px;
+    left: -21px;
     background-image: url("../img/icon-sprite.png");
     background-position: -84px -10px; }
 

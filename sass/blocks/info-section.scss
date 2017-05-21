@@ -1,7 +1,7 @@
 .info-section {
   background-color: $main-bg-color;
   text-align: center;
-  padding-top: 73px;
+  padding-top: 69px;
   padding-bottom: 55px;
 }
 
@@ -15,6 +15,7 @@
 
   &::before {
     content: "";
+    display: block;
     position: absolute;
 
     left: 50%;
@@ -22,74 +23,76 @@
   }
 
   &--pos-automat {
-  padding-top: 109px;
+  padding-top: 99px;
 
     &::before {
       width: 40px;
       height: 45px;
 
-      top: 35px;
-      background-image: url("../img/pos-automat.png");
+      top: 44px;
+      left: 51%;
+      background-image: url("../img/mobile-pos-automat.png");
     }
   }
 
   &--money-hand {
-    padding-top: 104px;
+    padding-top: 95px;
 
     &::before {
       width: 46px;
       height: 36px;
 
-      top: 50px;
-      background-image: url("../img/money-hand.png");
+      top: 48px;
+      background-image: url("../img/mobile-money-hand.png");
     }
   }
 
   &--street-terminal {
-    padding-top: 112px;
+    padding-top: 105px;
 
     &::before {
       width: 32px;
       height: 43px;
 
-      top: 55px;
-      background-image: url("../img/street-terminal.png");
+      top: 53px;
+      background-image: url("../img/mobile-street-terminal.png");
     }
   }
 
   &--plane-table {
-    padding-top: 118px;
+    padding-top: 110px;
 
     &::before {
       width: 32px;
       height: 44px;
 
-      top: 58px;
-      background-image: url("../img/plane-table.png");
+      top: 55px;
+      background-image: url("../img/mobile-plane-table.png");
     }
   }
 
-  &--mobilephone {
-    padding-top: 125px;
+  &--cellphone {
+    padding-top: 118px;
 
     &::before {
       width: 49px;
       height: 44px;
 
-      top: 60px;
-      background-image: url("../img/mobilephone.png");
+      top: 57px;
+      left: 52.7%;
+      background-image: url("../img/mobile-cellphone.png");
     }
   }
 
   &--credit-card {
-    padding-top: 112px;
+    padding-top: 103px;
 
     &::before {
       width: 51px;
       height: 40px;
 
-      top: 58px;
-      background-image: url("../img/credit-card.png");
+      top: 55px;
+      background-image: url("../img/mobile-credit-card.png");
     }
   }
 }
@@ -105,7 +108,98 @@
 }
 
 .info-section__button {
-  margin-top: 69px;
+  margin-top: 65px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media #{$desktop-widths} {
+  .info-section {
+    padding-top: 70px;
+  }
+
+  .info-section__item-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 68.4%;
+    justify-content: space-between;
+    margin-left: 15.7%;
+    margin-right: 15.9%;
+  }
+
+  .info-section__item {
+    width: 25.1%;
+
+    &--pos-automat {
+      padding-top: 182px;
+
+      &::before {
+        width: 74px;
+        height: 82px;
+
+        top: 25px;
+        background-image: url("../img/desktop-pos-automat.png");
+      }
+    }
+
+    &--money-hand {
+
+      &::before {
+        width: 84px;
+        height: 64px;
+
+        top: 30px;
+        background-image: url("../img/desktop-money-hand.png");
+      }
+    }
+
+    &--street-terminal {
+
+      &::before {
+        width: 60px;
+        height: 77px;
+
+        top: 35px;
+        background-image: url("../img/desktop-street-terminal.png");
+      }
+    }
+
+    &--plane-table {
+
+      &::before {
+        width: 60px;
+        height: 79px;
+
+        top: 38px;
+        background-image: url("../img/desktop-plane-table.png");
+      }
+    }
+
+    &--cellphone {
+      padding-top: 125px;
+
+      &::before {
+        width: 90px;
+        height: 80px;
+
+        top: 40px;
+        background-image: url("../img/desktop-cellphone.png");
+      }
+    }
+
+    &--credit-card {
+
+      &::before {
+        width: 94px;
+        height: 72px;
+
+        top: 38px;
+        background-image: url("../img/desktop-credit-card.png");
+      }
+    }
+  }
+
+  .info-section__item-title {
+    font-size: 22px;
+  }
 }
