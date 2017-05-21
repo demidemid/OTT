@@ -46,6 +46,7 @@
   width: 123px;
   min-height: 32px;
   background-color: transparent;
+  font-size: 12px;
   color: #212121;
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
@@ -186,30 +187,35 @@
   }
 
   .promo-section__features-block {
-    width: 56%;
+    width: 62%;
   }
 
   .promo-section__feature {
     font-size: 16px;
+    min-width: 144px;
     padding-top: 128px;
 
     &--airline::before {
       width: 80px;
       height: 61px;
 
-      top: 25px;
+      top: 49px;
       background-image: url("../img/desktop-airplane.png");
     }
 
     &--train::before {
       width: 54px;
       height: 64px;
+
+      top: 48px;
       background-image: url("../img/desktop-train.png");
     }
 
     &--house::before {
       width: 71px;
       height: 66px;
+
+      top: 45px;
       background-image: url("../img/desktop-house.png");
     }
   }
@@ -220,5 +226,11 @@
 
   .promo-section__feature-hidden-on-mobile {
     display: block;
+  }
+
+  .promo-section__info-quote {
+    width: 31.6%;
+    margin-left: 33.9%;
+    margin-right: 34.5%;
   }
 }

@@ -7,6 +7,7 @@
   background-color: #fff;
 
   @media #{$desktop-widths} {
+    font-size: 14px;
     min-width: $desktop-content-width;
     background-color: #fff;
   }
