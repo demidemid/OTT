@@ -361,12 +361,12 @@ th {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   background-color: #fff; }
   @media (min-width: 1280px) {
     .body {
-      width: 1280px;
+      min-width: 1280px;
       background-color: #fff; } }
 
 .burger-button {
@@ -406,6 +406,9 @@ th {
   margin: 0;
   font-size: 20px;
   color: #2c2c2c; }
+  @media (min-width: 1280px) {
+    .info-section__title {
+      font-size: 30px; } }
 
 .info-section__item {
   position: relative; }
@@ -473,16 +476,85 @@ th {
 .main-header {
   min-height: 41px; }
 
+.main-header__logo {
+  display: none; }
+
 .main-header__menu-button {
   padding: 12px 0;
   margin-left: 21px; }
 
 @media (min-width: 1280px) {
   .main-header {
+    display: flex;
     min-height: 73px;
+    align-items: center;
     background-color: #373737; }
+  .main-header__logo {
+    display: block;
+    margin-left: 40px; }
   .main-header__menu-button {
     display: none; } }
+
+.main-menu {
+  display: none; }
+
+.main-menu__list {
+  padding: 0; }
+
+.main-menu__item {
+  font-size: 14px;
+  list-style-type: none; }
+
+.main-menu__link {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.main-menu__user-block {
+  display: none; }
+
+@media (min-width: 1280px) {
+  .main-menu {
+    display: block; }
+  .main-menu__list {
+    margin-left: 40px; }
+  .main-menu__item {
+    display: inline-block;
+    margin-right: 25px; }
+    .main-menu__item--three-dots {
+      position: relative;
+      font-size: 0px; }
+      .main-menu__item--three-dots::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 4px;
+        bottom: 50%;
+        left: -7px;
+        transform: translateY(-50%);
+        background-image: url("../img/icon-sprite.png");
+        background-position: -150px -10px; }
+  .main-menu__user-block {
+    display: block;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 32px;
+    margin-left: auto;
+    margin-right: 40px; }
+  .main-menu__my-order {
+    margin-right: 10px; }
+  .main-menu__login {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 76px;
+    height: 32px;
+    border: 1px solid #c6c6c6;
+    border-radius: 2px;
+    text-align: center; } }
 
 .promo-section {
   padding-top: 50px;
@@ -493,6 +565,9 @@ th {
   font-size: 20px;
   color: #2c2c2c;
   text-align: center; }
+  @media (min-width: 1280px) {
+    .promo-section__title {
+      font-size: 30px; } }
 
 .promo-section__offers-list {
   margin-top: 55px;
@@ -599,3 +674,8 @@ th {
     left: 39px;
     background-image: url("../img/icon-sprite.png");
     background-position: -84px -10px; }
+
+@media (min-width: 1280px) {
+  .promo-section {
+    padding-top: 65px;
+    padding-bottom: 70px; } }

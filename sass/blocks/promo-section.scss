@@ -145,3 +145,10 @@
     background-position: -84px -10px;
   }
 }
+
+@media #{$desktop-widths} {
+  .promo-section {
+    padding-top: 65px;
+    padding-bottom: 70px;
+  }
+}
