@@ -4,7 +4,6 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -357,6 +356,11 @@ td,
 th {
   padding: 0; }
 
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf) format("ttf"); }
+
 .body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 12px;
@@ -601,7 +605,7 @@ th {
     margin-right: auto; } }
 
 .main-header {
-  min-height: 41px; }
+  height: 41px; }
 
 .main-header__logo {
   display: none; }
@@ -668,9 +672,11 @@ th {
 
 @media (min-width: 1280px) {
   .main-menu {
-    display: block;
+    display: flex;
     position: static;
+    align-items: center;
     width: auto;
+    height: 73px;
     text-align: left; }
   .main-menu__list {
     margin-left: 40px; }
@@ -680,17 +686,20 @@ th {
     margin-right: 22px; }
     .main-menu__item--three-dots {
       position: relative;
-      font-size: 0px; }
+      font-size: 15px; }
       .main-menu__item--three-dots::before {
         content: "";
         position: absolute;
         width: 20px;
         height: 4px;
+        top: 50%;
         bottom: 50%;
-        left: -7px;
+        left: 0px;
         transform: translateY(-50%);
         background-image: url("../img/icon-sprite.png");
         background-position: -150px -10px; }
+  .main-menu__link--three-dots {
+    color: #373737; }
   .main-menu__button {
     display: none; }
   .main-menu__user-block {
