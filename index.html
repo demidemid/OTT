@@ -15,7 +15,7 @@
       <button class="burger-button"></button>
     </div>
 
-    <nav class="main-menu">
+    <nav class="main-menu main-menu--no-js">
       <ul class="main-menu__list">
         <li class="main-menu__item">
           <a class="main-menu__link" href="#">Авиабилеты</a>
@@ -42,6 +42,7 @@
           <a class="main-menu__link" href="#">...</a>
         </li>
       </ul>
+      <button class="button main-menu__button">Закрыть</button>
     </nav>
 
     <div class="main-menu__user-block">
@@ -55,18 +56,33 @@
       <h2 class="promo-section__title">Заголовок</h2>
 
       <ul class="promo-section__offers-list">
-        <li class="promo-section__offers-item">Кэшбэк 1% со всех покупок и до 10% с покупок в «любимых местах»</li>
+        <li class="promo-section__offers-item promo-section__offers-item--any-places">
+          Кэшбэк 1% со всех покупок и до 10% с покупок в «любимых местах»
+
+          <div class="promo-section__offers-tooltip">
+            <span class="promo-section__tooltip-triangle"></span>
+            <p class="promo-section__tooltip-text-style">Вы можете выбрать 3 «любимых» мест в мобильном приложении</p>
+          </div>
+
+        </li>
+
         <li class="promo-section__offers-item">А также баллы при покупке в приложении</li>
       </ul>
+
+
     </section>
 
     <section class="promo-section__slider">
       <div class="promo-section__toggle-container">
-        <button class="promo-section__toggle-button">В приложении</button>
-        <button class="promo-section__toggle-button promo-section__toggle-button--active">На сайте</button>
+        <label class="promo-section__toggle-button promo-section__toggle-button--app promo-section__toggle-button--checked">
+          <input class="promo-section__radio-button" type="radio" name="toggle" id="app-js" checked>В приложении
+        </label>
+        <label class="promo-section__toggle-button promo-section__toggle-button--site">
+          <input class="promo-section__radio-button" type="radio" name="toggle" id="site-js">На сайте
+        </label>
       </div>
 
-    <div class="promo-section__features-block">
+    <div class="promo-section__features-block promo-section__features-block--application">
       <div class="promo-section__feature promo-section__feature--airline">
         <span class="promo-section__feature-big-font">4%</span>
         <span class="promo-section__feature-hidden-on-mobile">на авиабилеты</span>
@@ -78,6 +94,22 @@
       <div class="promo-section__feature promo-section__feature--house">
         <span class="promo-section__feature-anti-br">до</span>
         <span class="promo-section__feature-big-font">8%</span>
+        <span class="promo-section__feature-hidden-on-mobile">на отели</span>
+      </div>
+    </div>
+
+    <div class="promo-section__features-block promo-section__features-block--site">
+      <div class="promo-section__feature promo-section__feature--airline">
+        <span class="promo-section__feature-big-font">5%</span>
+        <span class="promo-section__feature-hidden-on-mobile">на авиабилеты</span>
+      </div>
+      <div class="promo-section__feature promo-section__feature--train">
+        <span class="promo-section__feature-big-font">7%</span>
+        <span class="promo-section__feature-hidden-on-mobile">на ж/д билеты</span>
+      </div>
+      <div class="promo-section__feature promo-section__feature--house">
+        <span class="promo-section__feature-anti-br">до</span>
+        <span class="promo-section__feature-big-font">9%</span>
         <span class="promo-section__feature-hidden-on-mobile">на отели</span>
       </div>
     </div>
@@ -99,37 +131,55 @@
     <div class="info-section__item-list">
       <section class="info-section__item info-section__item--pos-automat">
         <h3 class="info-section__item-title">Пункт 1</h3>
-        <p class="info-section__item-description">Описание 1</p>
+        <span class="info-section__item-description">Описание 1</span>
       </section>
 
       <section class="info-section__item info-section__item--money-hand">
         <h3 class="info-section__item-title">Пункт 2</h3>
-        <p class="info-section__item-description">Описание 2</p>
+        <span class="info-section__item-description">Описание 2</span>
       </section>
 
       <section class="info-section__item info-section__item--street-terminal">
         <h3 class="info-section__item-title">Пункт 3</h3>
-        <p class="info-section__item-description">Описание 3</p>
+        <span class="info-section__item-description">Описание 3</span>
       </section>
 
       <section class="info-section__item info-section__item--plane-table">
         <h3 class="info-section__item-title">Пункт 4</h3>
-        <p class="info-section__item-description">Описание 4</p>
+        <span class="info-section__item-description info-section__item-description--delivery-places">
+          Описание 4
+
+          <div class="info-section__tooltip-block">
+
+            <div class="info-section__tooltip-triangle"></div>
+            <p class="info-section__tooltip-text-style">Доставка осуществляется по&nbsp;Москве,
+            Санкт‑Петербургу, Екатеринбургу, Новосибирску, Казани, Нижнему Новгороду,
+            Тюмени, Краснодару, Челябинску, Красноярску, Ростову-на‑Дону, Самаре,
+            Тольятти, Перми, Омску, Уфе, Саратову и Иркутску
+            </p>
+
+
+          </div>
+
+        </span>
+
       </section>
 
       <section class="info-section__item info-section__item--cellphone">
         <h3 class="info-section__item-title">Пункт 5</h3>
-        <p class="info-section__item-description">Описание 5</p>
+        <span class="info-section__item-description">Описание 5</span>
       </section>
 
       <section class="info-section__item info-section__item--credit-card">
         <h3 class="info-section__item-title">Пункт 6</h3>
-        <p class="info-section__item-description">Описание 6</p>
+        <span class="info-section__item-description">Описание 6</span>
       </section>
     </div>
 
     <a class="button info-section__button" href="#">Подробнее</a>
 
   </article>
+
+  <script src="js/app.js" async></script>
 </body>
 </html>

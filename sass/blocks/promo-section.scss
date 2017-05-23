@@ -38,36 +38,49 @@
   }
 }
 
+.promo-section__tooltip-text-style {
+  display: none;
+}
+
 .promo-section__toggle-container {
   display: flex;
+  max-width: 246px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .promo-section__toggle-button {
   width: 123px;
   min-height: 32px;
-  background-color: transparent;
+  // background-color: transparent;
   font-size: 12px;
+  line-height: 32px;
+  text-align: center;
   color: #212121;
   border: 1px solid #e0e0e0;
   box-sizing: border-box;
+  cursor: pointer;
 
   &:first-child {
-    margin-left: auto;
     border-right: 0px;
     border-radius: 2px 0 0 2px;
   }
 
   &:last-child {
-    margin-right: auto;
     border-left: 0;
     border-radius: 0 2px 2px 0;
   }
+}
 
-  &--active {
-    width: 124px;
-    border: 1px solid $main-bg-color;
-    background-color: $main-bg-color;
-  }
+.promo-section__radio-button {
+  display: none;
+}
+
+.promo-section__toggle-button--checked {
+  width: 124px;
+  min-height: 32px;
+  border: 1px solid $main-bg-toggle-btn-color;
+  background-color: $main-bg-toggle-btn-color;
 }
 
 .promo-section__features-block {
@@ -75,6 +88,14 @@
   width: 80%;
   justify-content: space-between;
   margin: 0 auto;
+
+  &--application {
+    display: flex;
+  }
+
+  &--site {
+    display: none;
+  }
 }
 
 .promo-section__feature {
@@ -130,6 +151,10 @@
 
 .promo-section__feature-big-font {
   font-size: 22px;
+
+  &--site {
+    display: none;
+  }
 }
 
 .promo-section__feature-hidden-on-mobile {
@@ -170,21 +195,103 @@
 
   .promo-section__offers-list {
     margin-top: 67px;
-    padding-left: 380px;
-    padding-right: 380px;
+    width: 550px;
+
+    padding-left: 29.6%;
+    padding-right: 32%;
   }
 
   .promo-section__offers-item {
     font-size: 16px;
     margin-bottom: 22px;
 
+    &--any-places {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+
+        top: 2px;
+        right: 0;
+        background-image: url("../img/icon-sprite.png");
+        background-position: -49px -10px;
+      }
+    }
+
     &:last-child {
     margin-bottom: 49px;
     }
 
     &::before {
-      left: -25px;
+      width: 16px;
+      height: 13px;
+
+      left: -30px;
+      background-image: url("../img/icon-sprite.png");
+      background-position: -225px -10px;
     }
+  }
+
+  // TOOLTIP ////////////////////////////////////////////////////////////////
+  .promo-section__offers-tooltip {
+    display: none;
+    position: absolute;
+
+    top: 30px;
+    right: -205px;
+
+    width: 234px;
+    padding-top: 18px;
+    padding-left: 15px;
+    // padding-right: 8px;
+    padding-bottom: 16px;
+    border-radius: 2px;
+    box-sizing: border-box;
+
+    background-color: #ffffff;
+    box-shadow: -5px 0px 7px 0px rgba(213, 213, 213, 0.73),
+                5px 0px 7px 0px rgba(213, 213, 213, 0.73),
+                0px -5px 7px 0px rgba(213, 213, 213, 0.73),
+                0px 5px 7px 0px rgba(213, 213, 213, 0.73);
+    z-index: 100;
+  }
+
+  .promo-section__tooltip-triangle {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    overflow: hidden;
+    top: -97px;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 80px;
+      background: #fff;
+      transform: rotate(35deg) scale(0.6);
+      top: 85px;
+      left: -75px;
+      box-shadow: -5px 0px 17px 0px rgba(213, 213, 213, 0.73);
+    }
+  }
+
+  .promo-section__tooltip-text-style {
+    display: block;
+    font-size: 13px;
+    line-height: 15px;
+    color: #424242;
+    margin: 0;
+  }
+
+  .promo-section__offers-item--any-places:hover >
+  .promo-section__offers-tooltip {
+    display: block;
   }
 
   .promo-section__features-block {
@@ -223,15 +330,38 @@
 
   .promo-section__feature-big-font {
     font-size: 32px;
+
+    &--application {
+      display: none;
+    }
+
+    &--site {
+      display: inline-block;
+    }
   }
 
   .promo-section__feature-hidden-on-mobile {
     display: block;
   }
 
+  .promo-section__button {
+    margin-top: 39px;
+  }
+
   .promo-section__info-quote {
     width: 31.6%;
+    margin-top: 38px;
     margin-left: 33.9%;
     margin-right: 34.5%;
+
+    &::before {
+      width: 15px;
+      height: 15px;
+
+      top: 0;
+      left: -25px;
+      background-image: url("../img/icon-sprite.png");
+      background-position: -190px -10px;
+    }
   }
 }
