@@ -770,7 +770,7 @@ th {
 
 .promo-section__toggle-button {
   width: 123px;
-  min-height: 32px;
+  height: 32px;
   font-size: 12px;
   line-height: 32px;
   text-align: center;
@@ -790,7 +790,7 @@ th {
 
 .promo-section__toggle-button--checked {
   width: 124px;
-  min-height: 32px;
+  height: 32px;
   border: 1px solid #ffd41e;
   background-color: #ffd41e; }
 

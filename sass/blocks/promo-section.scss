@@ -51,7 +51,7 @@
 
 .promo-section__toggle-button {
   width: 123px;
-  min-height: 32px;
+  height: 32px;
   // background-color: transparent;
   font-size: 12px;
   line-height: 32px;
@@ -78,7 +78,7 @@
 
 .promo-section__toggle-button--checked {
   width: 124px;
-  min-height: 32px;
+  height: 32px;
   border: 1px solid $main-bg-toggle-btn-color;
   background-color: $main-bg-toggle-btn-color;
 }
@@ -293,6 +293,8 @@
   .promo-section__offers-tooltip {
     display: block;
   }
+
+  /////////////////////////////////////////////////
 
   .promo-section__features-block {
     width: 62%;
